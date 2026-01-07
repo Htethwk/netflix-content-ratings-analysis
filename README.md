@@ -4,10 +4,12 @@ This project explores how a streaming platform’s content strategy varies acros
 The goal is to demonstrate **data storytelling, visualization design, and analytics/engineering thinking** using real-world messy metadata.
 
 ## Key Questions
-- How does the catalog balance **Movies vs TV Shows**?
-- Which **maturity ratings** dominate the platform?
-- How have content additions changed **over time**?
-- Do ratings differ across **top producing countries**?
+- How does Netflix balance **Movies vs TV Shows** in its content catalog?
+- Which **maturity ratings** dominate the platform, and what does that suggest about target audiences?
+- How has Netflix’s **content strategy evolved over time**, particularly during periods of rapid growth?
+- How do **ratings and genres** vary across different types of content?
+- How does Netflix adapt **content maturity across top international markets**?
+- What role do **genres and ratings** play in audience segmentation and engagement?
 
 ## What I Built
 - Cleaned and engineered features (`date_added`, `year_added`, multi-valued `countries`, `genres`)
@@ -16,34 +18,40 @@ The goal is to demonstrate **data storytelling, visualization design, and analyt
 
 ## Visual Highlights
 
-### 1) Movies vs TV Shows
-![Content Type](images/01_content_type.png)
+### 1) Movies vs TV Shows (Link : https://github.com/Htethwk/netflix-content-ratings-analysis/blob/main/01_Content_Type_Distribution.PNG )
 
-**Insight:** TV shows represent a major share of the catalog, supporting retention-driven engagement.
 
-### 2) Distribution of Content Ratings
-![Ratings Distribution](images/02_rating_distribution.png)
+**Insight:** Netflix’s catalog is movie-heavy in volume, but maintains a significant share of TV shows to support long-term viewer engagement and retention.
 
-**Insight:** The catalog is concentrated in TV-MA and TV-14, indicating a strategic focus on teen/adult audiences.
+### 2) Distribution of Content Ratings ( Link: https://github.com/Htethwk/netflix-content-ratings-analysis/blob/main/02_Rating_Distribution.PNG )
 
-### 3) Ratings by Content Type
-![Ratings by Type](images/03_ratings_by_type.png)
+**Insight:** Netflix’s content strategy is strongly oriented toward mature and teen audiences, with TV-MA and TV-14 titles accounting for the majority of the catalog.
 
-**Insight:** TV shows skew more mature than movies, reinforcing serialized content’s role in engagement.
+### 3) Ratings by Content Type ( Link: [https://github.com/Htethwk/netflix-content-ratings-analysis/blob/main/03_Rating_Breakdown_Movies_vs_TV%20shows.PNG )
 
-### 4) Content Added Over Time
-![Content Over Time](images/04_content_over_time.png)
+**Insight:** The sharper skew toward mature ratings in TV shows reinforces Netflix’s emphasis on serialized content that encourages repeat viewing and long-term subscriber retention.
 
-**Insight:** Content additions accelerate after 2016, aligning with platform expansion and scaling of content investment.
+### 4) Top Genres by Rating (Link : https://github.com/Htethwk/netflix-content-ratings-analysis/blob/main/04_Top_Genres_By_Rating.PNG )
 
-### 5) Ratings by Country (Top Markets)
-![Ratings by Country](images/05_ratings_by_country.png)
+**Insight:** Netflix uses genre-specific rating distributions to intentionally segment audiences, with mature ratings dominating Drama and International content and family ratings concentrated in Children & Family titles.
 
-**Insight:** Rating mixes differ by country, suggesting localization and regional audience differences.
+### 5) Content Added Over Time ( Link : https://github.com/Htethwk/netflix-content-ratings-analysis/blob/main/05_Content_Added_Overtime_by_Rating.PNG )
+
+**Insight:** The sustained dominance of TV-MA and TV-14 during peak growth years indicates Netflix’s deliberate focus on mature, retention-driven content as it scaled globally.
+
+### 6) Ratings by Country (Top Markets) (Link : https://github.com/Htethwk/netflix-content-ratings-analysis/blob/main/06_Rating_by_Country.PNG )
+
+**Insight:** Netflix tailors content maturity by region, balancing a mature U.S.-led catalog with localized rating distributions across international markets.
 
 ## How to Run
 Open the notebook:
-- `notebooks/netflix_content_ratings_analysis.ipynb`
+  1. Clone or download this repository.
+  2. Unzip the dataset file
+  3. Ensure the unzipped CSV file is placed in the appropriate directory
+  4. Open the Jupyter notebook
+  5.  Run the notebook cells from top to bottom to reproduce the analysis and visualizations.
+**Note:**  
+The dataset is provided in compressed format to keep the repository lightweight and to reflect real-world data handling practices.
 
 ## Tech Stack
 - Python, Pandas
