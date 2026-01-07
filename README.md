@@ -50,6 +50,7 @@ Open the notebook:
   3. Ensure the unzipped CSV file is placed in the appropriate directory
   4. Open the Jupyter notebook
   5.  Run the notebook cells from top to bottom to reproduce the analysis and visualizations.
+     
 **Note:**  
 The dataset is provided in compressed format to keep the repository lightweight and to reflect real-world data handling practices.
 
